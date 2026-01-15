@@ -58,9 +58,9 @@ K8s riavvia automaticamente un container se crasha, ma a volte un'app può blocc
 2. **Replica Count:** Il numero desiderato di Pod.
 3. **Pod Template:** Il modello usato per creare nuovi Pod quando necessario.
 
-==Il RS controlla i Pod basandosi sulle label. Se cambiamo la label di un Pod in esecuzione, questo esce dal controllo del RS, il quale ne creerà subito uno nuovo per rimpiazzarlo.==
+==Il RS controlla i Pod basandosi sulle label. Se cambiamo la label di un Pod in esecuzione, questo esce dal controllo del RS, il quale ne creerà subito uno nuovo per rimpiazzarlo. Quindi non K8s consente cambiare il label selector. Invece è possibile modificare il template del RS (ad esempio se cambiamo l'etichetta o l'immagine del container) che non aggiorna i Pod esistenti, ma solo quelli nuovi. Per aggiornare tutto, bisogna cancellare i vecchi Pod.==
 
-Modificare il _template_ del RS (ad esempio se cambi l'etichetta o l'immagine del container) non aggiorna i Pod esistenti, ma solo quelli nuovi. Per aggiornare tutto, bisogna cancellare i vecchi Pod. Per aumentare o diminuire i Pod, basta cambiare il valore `replicas` (es. `kubectl scale`).
+Per aumentare o diminuire i Pod, basta cambiare il valore `replicas` (es. `kubectl scale`).
 
 ## DaemonSet
 
