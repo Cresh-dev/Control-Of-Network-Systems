@@ -6,7 +6,7 @@ Per capire il PageRank, dobbiamo immaginare internet come un enorme grafo (una r
 
 L'idea rivoluzionaria è che **un link verso una pagina conta come un voto di fiducia**. Tuttavia, non tutti i voti hanno lo stesso peso. ==L'importanza di una pagina P è la somma dell'importanza delle pagine che la linkano, divisa per il numero di link che queste pagine fanno verso l'esterno.== 
 
-**Esempio**: Se una pagina **importante**  ci linka, il nostro rango sale molto. Se una pagina ci linka ma linka anche altre 100 persone, il valore del suo "voto" si **diluisce** (diventa 1/100).
+**Esempio**: Se una pagina **importante**  ci linka, il nostro rango sale molto. Se una pagina ci linka ma linka anche altre 99 persone, il valore del suo "voto" si **diluisce** (diventa 1/100).
 
 ## La Formula Matematica
 
