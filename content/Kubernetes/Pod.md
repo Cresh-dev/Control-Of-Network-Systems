@@ -1,6 +1,6 @@
 Il Pod è l'**unità atomica** (la più piccola) che si può creare e gestire in Kubernetes.
 
-- **Non gestisci container:** In K8s non distribuimo direttamente dei container (come faresti con Docker puro), ma distribuiamo Pod che _contengono_ container.
+- **Non gestisci container:** In K8s non distribuiamo direttamente dei container (come faresti con Docker puro), ma distribuiamo Pod che _contengono_ container.
 - **Contenuto:** Un Pod può contenere uno o più container (ad esempio, un container principale per l'app e uno "sidecar" di supporto).
 - **Astrazione:** Pensiamo al Pod come a una "macchina logica" (un host virtuale) con il proprio indirizzo IP, hostname e processi .
 
