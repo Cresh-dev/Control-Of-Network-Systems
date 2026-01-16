@@ -38,8 +38,6 @@ $$\pi_k = A \cdot \pi_{k-1}$$
 
 # Esempio Pratico
 
-![[Screenshot 2026-01-12 at 17.52.14.png]]
-
 Immaginiamo un piccolo web con sole **4 pagine**.
 
 - **1** → linka solo a **2**.
