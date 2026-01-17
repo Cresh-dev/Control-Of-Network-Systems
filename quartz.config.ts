@@ -13,7 +13,8 @@ const config: QuartzConfig = {
     enableSPA: true,
     enablePopovers: true,
     analytics: {
-      provider: "plausible",
+      provider: "google",
+      tagId: "G-SMCR0BZTPQ",
     },
     locale: "it-IT",
     baseUrl: "Cresh-dev.github.io/Control-Of-Network-Systems",
