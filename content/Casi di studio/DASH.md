@@ -1,3 +1,3 @@
 **DASH** sta per **Dynamic Adaptive Streaming over HTTP**. In parole semplici, è un protocollo che permette di vedere video su internet in modo fluido, evitando che il video si blocchi (il fastidioso "buffering") anche quando la connessione internet rallenta. Distribuisce segmenti di dimensioni fisse con diverse qualità e bitrate, offrendo al lettore multimediale (_media player_) l'opportunità di scegliere quale segmento riprodurre in base al traffico di rete. Il file manifest denominato MPD (Media Presentation Description), in formato XML o JSON, fornisce informazioni sui segmenti video disponibili a diversi bitrate.
 
-![[Screenshot 2026-01-17 at 09.07.38.png]]
+![[Screenshot 2026-01-17 at 09.08.04.png]]

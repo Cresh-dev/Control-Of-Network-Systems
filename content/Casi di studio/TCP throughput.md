@@ -9,7 +9,7 @@ Dall'immagine possiamo calcolare l'area $A$ che è la quantità di pacchetti che
 2. Calcoliamo l'area del triangolo rettangolo che ha altezza $\frac{w}{2}$ e base $w-\frac{w}{2}=\frac{w}{2}$. L'area del triangolo è il prodotto $\frac{1}{2} \cdot \frac{w}{2} \cdot \frac{w}{2} = \frac{w^2}{8}$. 
 3. Sommiamo le due aree: $\frac{w^2}{4} + \frac{w^2}{8} = \frac{3w^2}{8}$.
 4. Uguagliamo l'area al numero di pacchetti in un ciclo (inverso della probabilità di perdita) $\frac{3w^2}{8} = \frac{1}{P}$ e isoliamo la finestra di congestione ($w$)  per trovare la sua dimensione $w = \sqrt{\frac{8}{3}} \cdot \frac{1}{\sqrt P}$.
-5. Dividiamo il tutto per RTT $\frac{w}{RTT} = \sqrt{\frac{8}{3}} \cdot \frac{1}{\sqrt P}\cdot \frac{1}{RTT} = \frac{k}{\sqrt{P} \cdot RTT}$ e otteniamo i throughput ($T$) cioè i dati ($w$) sopra l'unità di tempo ($RTT$): $$T = \frac{k}{\sqrt{P} \cdot RTT}$$
+5. Dividiamo il tutto per RTT $\frac{w}{RTT} = \sqrt{\frac{8}{3}} \cdot \frac{1}{\sqrt P}\cdot \frac{1}{RTT} = \frac{k}{\sqrt{P} \cdot RTT}$ e otteniamo i throughput ($T$) cioè i dati ($w$) sopra l'unità di tempo ($RTT$): $T = \frac{k}{\sqrt{P} \cdot RTT}$
 
 > [!NOTE] Attenzione alla probabilità di perdita
 > Dalla formula di mathis possiamo osservare che per avere delle velocità molto alte, $P$ deve essere un numero piccolissimo perché altrimenti la radice quadrata al denominatore "ucciderebbe" il throughput. Per questo esatto motivo abbiamo bisogno di modificare il protocollo TCP e variare il suo comportamento proprio come fa il [[TCP Cubic]].

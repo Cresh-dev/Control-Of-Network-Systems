@@ -15,17 +15,23 @@ Se abbiamo due sistemi caotici identici, uno che trasmette (Master, $x(t)$) e un
 
 L'obiettivo è forzare il ricevitore ($z$) a seguire esattamente il trasmettitore ($x$) in modo che l'errore tra i due ($e(t)$) vada a zero.
 
-$$e(t) = x(t) - z(t) \rightarrow 0$$
+$$
+e(t) = x(t) - z(t) \rightarrow 0
+$$
 
 Per fare ciò, inviamo un segnale di sincronizzazione $s(x)$ dal Master allo Slave:
 
-$$s(x) = f(x) + Kx$$
+$$
+s(x) = f(x) + Kx
+$$
 
 ## Il Trasmettitore (Master)
 
 Il sistema originale è descritto da:
 
-$$\dot{x}(t) = Ax(t) + Bf(x)$$
+$$
+\dot{x}(t) = Ax(t) + Bf(x)
+$$
 
 - $Ax(t)$: Parte lineare.
 - $Bf(x)$: Parte non lineare (la fonte del caos).
@@ -34,7 +40,9 @@ $$\dot{x}(t) = Ax(t) + Bf(x)$$
 
 Il ricevitore ha la stessa struttura, ma viene aggiunto un termine di correzione derivato dal segnale $s(x)$ ricevuto:
 
-$$\dot{z}(t) = Az(t) + Bf(z) + \underbrace{B(f(x)+Kx)−B(f(z)+Kz)}_{Termini \ di \ correzione}$$
+$$
+\dot{z}(t) = Az(t) + Bf(z) + \underbrace{B(f(x)+Kx)−B(f(z)+Kz)}_{Termini \ di \ correzione}
+$$
 
 L'obiettivo della correzione è cancellare la differenza tra i due sistemi.
 
@@ -42,7 +50,9 @@ L'obiettivo della correzione è cancellare la differenza tra i due sistemi.
 
 Sottraendo l'equazione del ricevitore da quella del trasmettitore, otteniamo la derivata dell'errore $\dot{e}(t)$:
 
-$$\dot{e}(t) = A(z(t)-x(t)) + BKx + BKz = Ae -BKe = (A-BK)e$$
+$$
+\dot{e}(t) = A(z(t)-x(t)) + BKx + BKz = Ae -BKe = (A-BK)e
+$$
 
 Questa è la classica equazione di un **Osservatore di Stato**. Se scegliamo la matrice $K$ in modo corretto, possiamo spostare gli **autovalori** (eigenvalues) della matrice $(A - BK)$ nel semipiano negativo reale ($\mathbb{R}^-$). L'errore $e(t)$ decade esponenzialmente a 0. I due sistemi sono ora sincronizzati ($x = z$).
 

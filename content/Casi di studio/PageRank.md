@@ -12,7 +12,9 @@ L'idea rivoluzionaria è che **un link verso una pagina conta come un voto di fi
 
 L'importanza (Rank) di una pagina $P$ si calcola così:
 
-$$r(P) = \sum_{Q \in B_P} \frac{r(Q)}{|Q|}$$
+$$
+r(P) = \sum_{Q \in B_P} \frac{r(Q)}{|Q|}
+$$
 
 **Legenda:**
 
@@ -32,7 +34,9 @@ Si parte assegnando a tutti lo stesso valore iniziale. Si ripete il calcolo tant
 
 In forma matriciale si scrive:
 
-$$\pi_k = A \cdot \pi_{k-1}$$
+$$
+\pi_k = A \cdot \pi_{k-1}
+$$
 
 (Il vettore dei rank di oggi è uguale alla Matrice $A$ moltiplicata per il vettore dei rank di ieri).
 
@@ -47,7 +51,9 @@ Immaginiamo un piccolo web con sole **4 pagine**.
 
 Costruiamo la matrice dove le **colonne ($j$)** sono le pagine di partenza e le **righe ($i$)** le pagine di arrivo.
 
-$$A = \begin{bmatrix} 0 & 1/2 & 0 & 1/2 \\ 1 & 0 & 0 & 1/2 \\ 0 & 1/2 & 0 & 0 \\ 0 & 0 & 1 & 0 \end{bmatrix}$$
+$$
+A = \begin{bmatrix} 0 & 1/2 & 0 & 1/2 \\ 1 & 0 & 0 & 1/2 \\ 0 & 1/2 & 0 & 0 \\ 0 & 0 & 1 & 0 \end{bmatrix}
+$$
 
 **Come leggere la matrice (Esempi):**
 
@@ -56,4 +62,6 @@ $$A = \begin{bmatrix} 0 & 1/2 & 0 & 1/2 \\ 1 & 0 & 0 & 1/2 \\ 0 & 1/2 & 0 & 0 \\
 
 Applicando la formula, l'importanza della pagina 1 al tempo $k$ è:
 
-$$\pi_1(k) = \frac{1}{2}\pi_2(k-1) + \frac{1}{2}\pi_4(k-1)$$
+$$
+\pi_1(k) = \frac{1}{2}\pi_2(k-1) + \frac{1}{2}\pi_4(k-1)
+$$

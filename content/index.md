@@ -1,7 +1,20 @@
 ---
 title: Indice
 ---
-**Argomenti teorici e casi di studio**:
+**Argomenti teorici**:
+
+- [[Equazioni in forma di stato]]
+- [[Forma canonica di controllo]]
+- [[Forma canonica di osservabilità]]
+- [[Forma diagonale]]
+- [[State feedback]]
+- [[Osservazione dello stato]]
+- [[Compensatore dinamico basato sull'osservatore]]
+- [[Matrice di raggiungibilità]]
+- [[Matrice di osservabilità]]
+- [[Linearizzazione attorno ad un punto di equilibrio]]
+
+**Casi di studio**:
 
 - [[DASH]]
 - [[HLS]]

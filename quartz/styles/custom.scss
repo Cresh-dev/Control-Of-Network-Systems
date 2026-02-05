@@ -1,3 +1,10 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+img[src$=".svg"] {
+  filter: brightness(0.5) contrast(1.2);
+  transition: filter 0.3s ease;
+}
+
+[data-theme="dark"] img[src$=".svg"] {
+  filter: invert(1) brightness(1.5) contrast(1.2);
+}

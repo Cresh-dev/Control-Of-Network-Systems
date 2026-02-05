@@ -4,4 +4,6 @@ Come sappiamo il TCP Reno aumenta la velocità di invio (la _Congestion Window_ 
 
 TCP Cubic risolve questo problema cambiando la matematica della crescita. Invece di una linea retta, usa una **funzione cubica** (una curva a forma di "S" allungata). L'equazione fondamentale che governa la finestra di congestione è:
 
-$$W(t) = C(t - K)^3 + W_{max}$$
+$$
+W(t) = C(t - K)^3 + W_{max}
+$$

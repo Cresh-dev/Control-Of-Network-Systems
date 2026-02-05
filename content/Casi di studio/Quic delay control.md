@@ -8,17 +8,23 @@ Definiamo i seguenti protagonisti:
 
 La metrica chiave è l'**OWDV** (One Way Delay Variation), calcolata come la differenza tra il ritardo del pacchetto attuale e quello precedente.
 
-$$OWDV = OWD_{(i+1)} - OWD_{(i)}$$
+$$
+OWDV = OWD_{(i+1)} - OWD_{(i)}
+$$
 
 ![[Screenshot 2026-01-14 at 11.13.38.png]]
 
 Espandendo la formula con i timestamp di invio ($S$) e ricezione ($R$):
 
-$$OWDV = (t_{i+1}^R - t_{i+1}^S) - (t_{i}^R - t_{i}^S)$$
+$$
+OWDV = (t_{i+1}^R - t_{i+1}^S) - (t_{i}^R - t_{i}^S)
+$$
 
 Raggruppando i termini per capire cosa accade fisicamente:
 
-$$\text{OWDV} = \underbrace{(t_{i+1}^R - t_{i}^R)}_{\text{Intervallo al Ricevitore}} - \underbrace{(t_{i+1}^S - t_{i}^S)}_{\text{Intervallo al Mittente}}$$
+$$
+\text{OWDV} = \underbrace{(t_{i+1}^R - t_{i}^R)}_{\text{Intervallo al Ricevitore}} - \underbrace{(t_{i+1}^S - t_{i}^S)}_{\text{Intervallo al Mittente}}
+$$
 
 Stiamo confrontando l'intervallo di tempo tra l'arrivo dei pacchetti al ricevitore con l'intervallo di invio del mittente.
 
@@ -47,8 +53,12 @@ Il sistema utilizza una soglia per decidere come comportarsi.
 
 Quando $OWD \ge OWD_{th}$, si applica il seguente settaggio:
 
-$$cwnd = BWE \cdot RTT_{min}$$
-$$ssthresh = cwnd$$
+$$
+cwnd = BWE \cdot RTT_{min}
+$$
+$$
+ssthresh = cwnd
+$$
 
 - **$cwnd$:** Congestion Window (finestra di congestione).
 - **$BWE$:** Bandwidth Estimate (stima della banda disponibile).

@@ -4,7 +4,9 @@
 
 Questo controllore è chiamato predittore di Smith:
 
-$$G_c(s) = \frac{K(s)}{1 + K(s)G_p(s)(1 - e^{-sT})}$$
+$$
+G_c(s) = \frac{K(s)}{1 + K(s)G_p(s)(1 - e^{-sT})}
+$$
 
 Per chiarezza, ecco cosa rappresentano i termini nell'equazione:
 

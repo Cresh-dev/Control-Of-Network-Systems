@@ -1,4 +1,4 @@
-Per introdurre questo concetto dobbiamo partire da una situazione in cui due utenti vogliono stabilire una videoconferenza o scambiare dati (es. gaming, chat), ma spesso sorge il dubbio su quale software usare, se è compatibile con il sistema operativo o se funziona su tutti i dispositivi. ==WebRTC  è una tecnologia con l'idea di utilizzare il browser come piattaforma unificante, trasformando la voce e il video in un'altra applicazione JavaScript, senza bisogno di plugin esterni.==
+Per introdurre questo concetto dobbiamo partire da una situazione in cui due utenti vogliono stabilire una videoconferenza o scambiare dati (es. gaming, chat), ma spesso sorge il dubbio su quale software usare, se è compatibile con il sistema operativo o se funziona su tutti i dispositivi. ==WebRTC  è una tecnologia con l'idea di utilizzare il **browser** come piattaforma unificante, trasformando la voce e il video in un'altra applicazione JavaScript, senza bisogno di plugin esterni==.
 
 # Standardizzazione e Architettura
 

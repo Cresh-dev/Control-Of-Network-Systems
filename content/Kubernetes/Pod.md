@@ -14,7 +14,7 @@ Il Pod è l'**unità atomica** (la più piccola) che si può creare e gestire in
 
 # Creazione e Gestione
 
-==I Pod vengono definiti tramite file YAML (o JSON) chiamati "manifest"==, che contengono tre sezioni principali :
+==I Pod vengono definiti tramite file **YAML** (o JSON) chiamati "manifest"==, che contengono tre sezioni principali :
 
 1. **Metadata:** Nome del pod, etichette (labels), namespace.
 2. **Spec:** La descrizione desiderata (quali container usare, quali immagini Docker, quali porte).  
@@ -30,9 +30,9 @@ Comandi essenziali:
 
 Man mano che i Pod aumentano, serve un modo per organizzarli.
 
-- **Labels (Etichette):** ==Sono coppie chiave-valore (es. env: prod, creation_method: manual) attaccate ai Pod per categorizzarli.==
+- **Labels (Etichette):** ==Sono coppie chiave-valore (es. env: prod, creation_method: manual) attaccate ai Pod per categorizzarli .==
 - **Node Selector:** ==Possiamo dire a Kubernetes di eseguire un Pod solo su specifici nodi che hanno una certa etichetta.==
-    - _Esempio:_ Se abbiamo un nodo con GPU, gli diamo l'etichetta `gpu=true`. Poi, nella definizione del Pod, usiamo `nodeSelector: gpu: "true"` per forzare l'esecuzione su quel nodo.
+    - _Esempio:_ Se abbiamo un nodo con GPU, gli diamo l'etichetta `gpu=true`. Poi, nella definizione del Pod, usiamo `nodeSelector: gpu: "true"` per forzare l'esecuzione su quel nodo .
 
 # Namespace
 
@@ -58,20 +58,20 @@ K8s riavvia automaticamente un container se crasha, ma a volte un'app può blocc
 2. **Replica Count:** Il numero desiderato di Pod.
 3. **Pod Template:** Il modello usato per creare nuovi Pod quando necessario.
 
-==Il RS controlla i Pod basandosi sulle label. Se cambiamo la label di un Pod in esecuzione, questo esce dal controllo del RS, il quale ne creerà subito uno nuovo per rimpiazzarlo. Quindi non K8s consente cambiare il label selector. Invece è possibile modificare il template del RS (ad esempio se cambiamo l'etichetta o l'immagine del container) che non aggiorna i Pod esistenti, ma solo quelli nuovi. Per aggiornare tutto, bisogna cancellare i vecchi Pod.==
+==Il RS controlla i Pod basandosi sulle label. Se cambiamo la label di un Pod in esecuzione, questo esce dal controllo del RS, il quale ne creerà subito uno nuovo per rimpiazzarlo. Quindi non K8s consente cambiare il label selector.==
 
-Per aumentare o diminuire i Pod, basta cambiare il valore `replicas` (es. `kubectl scale`).
+Invece è possibile modificare il _template_ del RS (ad esempio se cambiamo l'etichetta o l'immagine del container) che non aggiorna i Pod esistenti, ma solo quelli nuovi. Per aggiornare tutto, bisogna cancellare i vecchi Pod. Per aumentare o diminuire i Pod, basta cambiare il valore `replicas` (es. `kubectl scale`).
 
 ## DaemonSet
 
-==A differenza del ReplicaSet, il DaemonSet serve per eseguire un Pod su ogni nodo (o su nodi specifici) del cluster== (ad esempio processi di sistema come raccoglitori di log o monitoraggio delle risorse). ==Se si aggiunge un nuovo nodo al cluster, il DS aggiunge automaticamente il Pod su quel nodo. Se qualcuno cancella manualmente un Pod del DaemonSet, Kubernetes lo ricrea automaticamente sullo stesso nodo (o su un nodo idoneo)==. È possibile limitare il DS a specifici nodi usando `nodeSelector` (es. eseguire solo su nodi con disco SSD).
+==A differenza del ReplicaSet, il DaemonSet serve per eseguire **un Pod su ogni nodo** (o su nodi specifici) del cluster== (ad esempio processi di sistema come raccoglitori di log o monitoraggio delle risorse). ==Se si aggiunge un nuovo nodo al cluster, il DS aggiunge automaticamente il Pod su quel nodo. Se qualcuno cancella manualmente un Pod del DaemonSet, Kubernetes lo ricrea automaticamente sullo stesso nodo (o su un nodo idoneo)==. È possibile limitare il DS a specifici nodi usando `nodeSelector` (es. eseguire solo su nodi con disco SSD).
 
 > [!NOTE] Non fa nulla se un nodo va giù
 > Se un nodo diventa _NotReady_ o si spegne Il DaemonSet **non sposta il Pod su un altro nodo** aspetta che il nodo torni disponibile.
 
 ## Job
 
-==Il Job gestisce task che devono terminare una volta completato il lavoro== (a differenza di RS e DS che mantengono i processi attivi all'infinito). Se il processo fallisce (codice di uscita errore), il Job può riavviare il container o meno, in base alla `restartPolicy` (es. `OnFailure` o `Never`). Una volta finito con successo, il Pod non viene riavviato.
+==Il Job gestisce task che devono **terminare** una volta completato il lavoro== (a differenza di RS e DS che mantengono i processi attivi all'infinito). Se il processo fallisce (codice di uscita errore), il Job può riavviare il container o meno, in base alla `restartPolicy` (es. `OnFailure` o `Never`). Una volta finito con successo, il Pod non viene riavviato.
 
 ## CronJob
 
