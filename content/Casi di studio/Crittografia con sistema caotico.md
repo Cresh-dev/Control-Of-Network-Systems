@@ -1,3 +1,6 @@
+_Tag:_ #automatica #cns
+
+---
 Iniziamo con il definire cosa sono i sistemi caotici (come l'Attrattore di Lorenz):
 
 - **Non lineari:** Non seguono una semplice proporzionalità diretta.
@@ -9,7 +12,7 @@ Iniziamo con il definire cosa sono i sistemi caotici (come l'Attrattore di Loren
 > [!NOTE] Perché usarli in crittografia?
 > Poiché è impossibile conoscere le condizioni iniziali esatte del trasmettitore, il segnale generato appare come "rumore" imprevedibile a chiunque lo intercetti. Tuttavia, se conosciamo il sistema, non è vero rumore, ma caos strutturato.
 
-# Il Problema della Sincronizzazione
+## Il Problema della Sincronizzazione
 
 Se abbiamo due sistemi caotici identici, uno che trasmette (Master, $x(t)$) e uno che riceve (Slave, $z(t)$), normalmente divergeranno rapidamente.
 
@@ -25,7 +28,7 @@ $$
 s(x) = f(x) + Kx
 $$
 
-## Il Trasmettitore (Master)
+### Il Trasmettitore (Master)
 
 Il sistema originale è descritto da:
 
@@ -36,7 +39,7 @@ $$
 - $Ax(t)$: Parte lineare.
 - $Bf(x)$: Parte non lineare (la fonte del caos).
 
-## Il Ricevitore (Slave) con Correzione
+### Il Ricevitore (Slave) con Correzione
 
 Il ricevitore ha la stessa struttura, ma viene aggiunto un termine di correzione derivato dal segnale $s(x)$ ricevuto:
 
@@ -46,7 +49,7 @@ $$
 
 L'obiettivo della correzione è cancellare la differenza tra i due sistemi.
 
-## La Dinamica dell'Errore
+### La Dinamica dell'Errore
 
 Sottraendo l'equazione del ricevitore da quella del trasmettitore, otteniamo la derivata dell'errore $\dot{e}(t)$:
 

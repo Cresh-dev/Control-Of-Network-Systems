@@ -1,3 +1,6 @@
+_Tag:_ #automatica #cns
+
+---
 QUIC è un protocollo che si basa su **UDP** (User Datagram Protocol) a livello di implementazione a differenza del TCP (implementato nel kernel), il controllo di congestione in QUIC/UDP avviene a **livello applicativo**. ==Il TCP classico aspetta di perdere un pacchetto per rallentare. Quic effettua un controllo migliore, perché monitora il ritardo, se esso aumenta significa che la coda si sta riempiendo e quindi bisogna rallentare prima di perdere dei pacchetti (buffer overflow).==
 
 Definiamo i seguenti protagonisti:
@@ -28,7 +31,7 @@ $$
 
 Stiamo confrontando l'intervallo di tempo tra l'arrivo dei pacchetti al ricevitore con l'intervallo di invio del mittente.
 
-# Interpretazione dei Risultati
+## Interpretazione dei Risultati
 
 - **$= 0$ (Ritardo costante):** La rete è stabile. L'intervallo di ricezione è identico a quello di invio.
     
@@ -38,7 +41,7 @@ Stiamo confrontando l'intervallo di tempo tra l'arrivo dei pacchetti al ricevito
         
 - **$< 0$ (Ritardo in diminuzione):** La coda si sta svuotando.
 
-# Algoritmo di Controllo (Delay Control)
+## Algoritmo di Controllo (Delay Control)
 
 Il sistema utilizza una soglia per decidere come comportarsi.
 

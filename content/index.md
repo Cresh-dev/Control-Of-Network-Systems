@@ -1,6 +1,9 @@
 ---
 title: Indice
 ---
+_Tag:_ #automatica #cns
+
+---
 **Argomenti teorici**:
 
 - [[Equazioni in forma di stato]]

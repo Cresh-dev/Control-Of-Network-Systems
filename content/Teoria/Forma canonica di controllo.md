@@ -1,3 +1,6 @@
+_Tag:_ #automatica #cns
+
+---
 Usiamo questa rappresentazione quando vogliamo imporre al sistema un comportamento desiderato tramite il **ritorno di stato** ($u = -Kx$).
 
 Dato un sistema descritto dalla funzione di trasferimento:
@@ -27,6 +30,6 @@ $$
 Un sistema in questa forma è, per definizione, **completamente raggiungibile**. La [[Matrice di raggiungibilità|matrice di raggiungibilità]] ha rango massimo. I coefficienti dell'ultima riga di $A$ sono esattamente i coefficienti del polinomio caratteristico $P(s) = \det(sI - A)$. Questo rende banale il calcolo degli autovalori. ==Se applichiamo una retroazione dello stato, cambiare i poli del sistema equivale semplicemente a sommare i valori di K agli elementi dell'ultima riga di A==.
 
 ---
-# Schema a blocchi
+## Schema a blocchi
 
 ![[CNTR.svg]]

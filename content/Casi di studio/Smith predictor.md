@@ -1,3 +1,6 @@
+_Tag:_ #automatica #cns
+
+---
 ==Lo Smith Predictor serve a migliorare il controllo di sistemi con ritardo puro (dead time), cioè sistemi in cui tra l’azione di controllo e l’effetto sull’uscita passa un tempo significativo. Il problema principale è che il ritardo degrada fortemente le prestazioni di un controllore classico (come PID): può rendere il sistema lento, oscillante o addirittura instabile==. Lo Smith Predictor nasce proprio per **“aggirare” il ritardo** durante il progetto del controllo. Esso si ottiene uguagliando la funzione di trasferimento (FdT) dei due sistemi: il sistema iniziale e il sistema in cui il ritardo viene portato fuori dall'anello di retroazione. Dopo aver imposto l'uguaglianza, si otterrà una funzione di trasferimento del controllore che sarà equivalente alla FdT iniziale, ma senza considerare il ritardo. 
 
 ![[Screenshot 2026-01-17 at 09.04.13.png]]

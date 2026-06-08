@@ -1,6 +1,9 @@
-Per introdurre questo concetto dobbiamo partire da una situazione in cui due utenti vogliono stabilire una videoconferenza o scambiare dati (es. gaming, chat), ma spesso sorge il dubbio su quale software usare, se è compatibile con il sistema operativo o se funziona su tutti i dispositivi. ==WebRTC  è una tecnologia con l'idea di utilizzare il **browser** come piattaforma unificante, trasformando la voce e il video in un'altra applicazione JavaScript, senza bisogno di plugin esterni==.
+_Tag:_ #automatica #cns
 
-# Standardizzazione e Architettura
+---
+Per introdurre questo concetto dobbiamo partire da una situazione in cui due utenti vogliono stabilire una videoconferenza o scambiare dati (es. gaming, chat), ma spesso sorge il dubbio su quale software usare, se è compatibile con il sistema operativo o se funziona su tutti i dispositivi. ==WebRTC  è una tecnologia con l'idea di utilizzare il browser come piattaforma unificante, trasformando la voce e il video in un'altra applicazione JavaScript, senza bisogno di plugin esterni==.
+
+## Standardizzazione e Architettura
 
 WebRTC è frutto della collaborazione tra due enti di standardizzazione:
 
@@ -14,7 +17,7 @@ L'architettura descritta di seguito è il "Triangolo WebRTC":
 1. Due browser (Caller e Callee) che comunicano direttamente (P2P) per i media.
 2. Un **Web Service** (Signaling Server) che serve solo per far "incontrare" i due utenti e scambiare le informazioni iniziali necessarie a stabilire la connessione.
 
-# Le 3 API Principali
+## Le 3 API Principali
 
 WebRTC funziona in pratica attraverso tre API standardizzate dal W3C:
 
@@ -22,7 +25,7 @@ WebRTC funziona in pratica attraverso tre API standardizzate dal W3C:
 - **RTCPeerConnection:** ==È il cuore della comunicazione. Gestisce la connessione Point-to-Point (P2P), la codifica audio/video, e l'attraversamento dei NAT (le barriere di rete domestiche).==
 - **RTCDataChannel:** ==Un canale per inviare dati generici (non solo audio/video) direttamente tra i browser.==
 
-# Il Processo di Connessione (Handshake)
+## Il Processo di Connessione (Handshake)
 
 Scendiamo nel dettaglio tecnico di come avviene la connessione:
 

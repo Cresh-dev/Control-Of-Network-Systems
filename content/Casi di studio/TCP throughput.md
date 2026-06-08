@@ -1,6 +1,9 @@
+_Tag:_ #automatica #cns
+
+---
 Il **TCP Throughput** (o _throughput effettivo_) è una delle metriche più importanti per capire le reali prestazioni di una rete, questo valore indica la **quantità effettiva di dati che viene trasmessa con successo** (in byte o bit) in una data unità di tempo su una connessione TCP.
 
-# Calcolo della formula di Mathis
+## Calcolo della formula di Mathis
 
 ![[Screenshot 2026-01-09 at 15.46.25.png]]
 

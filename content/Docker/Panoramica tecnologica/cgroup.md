@@ -1,8 +1,6 @@
-
 _Tag:_ #container 
 
 ---
-
 Un cgroup è un meccanismo del kernel Linux che consente di limitare, monitorare e isolare l'uso delle risorse di sistema tra diversi gruppi di processi. Viene utilizzato dai container (Docker, Kubernetes, LXC, ecc.) per garantire che un singolo container non monopolizzi le risorse della macchina.
 
 ## Principali funzionalità dei cgroups

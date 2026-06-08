@@ -1,3 +1,6 @@
+_Tag:_ #automatica #cns
+
+---
 Questa forma è particolarmente utile perché permette di verificare [[Matrice di osservabilità|l'osservabilità del sistema]] e facilita la progettazione di **osservatori dello stato** (come il filtro di Kalman o l'osservatore di Luenberger).
 
 Consideriamo un sistema descritto dalla funzione di trasferimento:
@@ -27,6 +30,6 @@ $$
 Questa è la forma duale della [[Forma canonica di controllo|forma canonica di raggiungibilità]]. Se trasponiamo le matrici della forma di osservabilità, ottieniamo la forma di raggiungibilità di un sistema correlato. Un sistema espresso in questa forma è **sempre completamente osservabile**, a patto che non vi siano cancellazioni polo-zero nella funzione di trasferimento originale. ==Questa forma è "comoda" perché permette di imporre i poli dell'osservatore semplicemente scegliendo i guadagni che modificano l'ultima colonna della matrice A - LC==.
 
 ---
-# Schema a blocchi
+## Schema a blocchi
 
 ![[OBS.svg]]

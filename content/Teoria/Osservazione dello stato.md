@@ -1,3 +1,6 @@
+_Tag:_ #automatica #cns
+
+---
 ==Lo State Observer (osservatore dello stato) è un algoritmo (un "sensore virtuale") che stima lo stato interno di un sistema partendo solo dalle misure degli ingressi e delle uscite==. L'osservatore più comune è quello di **Luenberger**. Funziona facendo girare una simulazione del sistema in parallelo al sistema reale. Il sistema reale è descritto dalle [[Equazioni in forma di stato|equazioni di stato]]:
 
 $$

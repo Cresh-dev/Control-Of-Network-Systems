@@ -1,9 +1,12 @@
+_Tag:_ #kubernetes 
+
+---
 Kubernetes (o K8s) è un motore _open source_ per l'orchestrazione di container. Serve a distribuire, scalare e gestire applicazioni containerizzate in modo automatizzato .
 
 - **Il problema:** Quando il numero di componenti di un'applicazione (container) cresce o si gestiscono migliaia di server, la gestione manuale diventa impossibile. Serve un meccanismo automatico .
 - **La soluzione:** K8s astrae l'infrastruttura sottostante. Non importa quanti nodi (computer) ci siano; il sistema li vede come un'unica macchina e gestisce le risorse automaticamente .
 
-# Architettura di Kubernetes
+## Architettura di Kubernetes
 
 Il sistema si divide in due parti principali :
 
@@ -17,7 +20,7 @@ Il sistema si divide in due parti principali :
 	- **Kube-proxy:** Gestisce il traffico di rete e il bilanciamento del carico (load balancing) tra i componenti .
 	- **Container Runtime:** Il software che esegue effettivamente i container (es. [[Docker]]).
 
-# Funzionalità principali
+## Funzionalità principali
 
 Kubernetes garantisce che lo stato dell'applicazione corrisponda sempre a quello desiderato dall'utente (descritto in file YAML).
 
@@ -25,7 +28,7 @@ Kubernetes garantisce che lo stato dell'applicazione corrisponda sempre a quello
 - **Scaling:** Aumenta o diminuisce automaticamente il numero di copie dell'applicazione in base al carico.
 - **Aggiornamenti:** Permette di aggiornare le app eseguendo nuove istanze in parallelo e rimuovendo quelle vecchie solo se tutto funziona.
 
-# Il Flusso di Deployment
+## Il Flusso di Deployment
 
 Per eseguire un'app:
 
@@ -34,7 +37,7 @@ Per eseguire un'app:
 3. Lo **Scheduler** decide su quali nodi mettere i container.
 4. Il **Kubelet** sui nodi scelti istruisce il runtime di scaricare l'immagine (dal registry) ed eseguirla.
 
-# Strumenti pratici: Minikube e Kubectl
+## Strumenti pratici: Minikube e Kubectl
 
 - **Minikube:** È uno strumento per creare un cluster Kubernetes locale (sul proprio PC), ideale per test e sviluppo. Esegue K8s all'interno di una macchina virtuale (VM) o tramite Docker.
     - Comandi utili: `minikube start` (avvia), `minikube dashboard` (interfaccia grafica), `minikube delete` . 

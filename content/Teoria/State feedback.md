@@ -1,3 +1,6 @@
+_Tag:_ #automatica #cns
+
+---
 In un sistema descritto nello [[Equazioni in forma di stato|spazio di stato]], il comportamento è definito da un set di variabili interne chiamate "stati" ($x$). ==L'idea dello state feedback è quella di calcolare l'ingresso di controllo u come una combinazione lineare di tutti gli stati del sistema==.
 
 L'equazione fondamentale è:

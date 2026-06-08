@@ -1,3 +1,6 @@
+_Tag:_ #automatica #cns
+
+---
 La linearizzazione è un passaggio fondamentale nello studio dei sistemi dinamici, essa ci ==permette di "approssimare" il comportamento di un sistema complesso e non lineare con uno lineare (molto più semplice da studiare) nelle immediate vicinanze di un punto di equilibrio==. Partiamo da un sistema dinamico espresso da un'equazione differenziale vettoriale non lineare:
 
 $$

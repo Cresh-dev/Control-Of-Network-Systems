@@ -1,3 +1,6 @@
+_Tag:_ #automatica #cns
+
+---
 La **matrice di osservabilità** è il concetto duale della [[Matrice di raggiungibilità|raggiungibilità]]. ==Mentre la raggiungibilità riguarda la capacità dell'ingresso di influenzare lo stato, l'osservabilità riguarda la capacità di ricostruire lo stato interno del sistema guardando solo le uscite (y) e gli ingressi (u)==. Per un sistema con $n$ variabili di stato, la matrice di osservabilità è costruita impilando verticalmente la matrice di uscita $C$ moltiplicata per le potenze della matrice dinamica $A$:
 
 $$

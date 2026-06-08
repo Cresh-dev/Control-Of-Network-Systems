@@ -1,3 +1,6 @@
+_Tag:_ #automatica #cns
+
+---
 ==Il nostro obiettivo tramite questo controllo è modellare il buffer dei chunk video, quindi noi siamo interessati effettivamente ai secondi di video immagazzinati nel buffer.== 
 
 ![[Screenshot 2026-01-17 at 09.10.13.png]]
@@ -31,7 +34,7 @@ $$
 
 In sintesi, il controllore agisce proprio come un rubinetto inverso: per riempire il serbatoio (buffer) dobbiamo "stringere" la qualità (abbassarla), mentre per svuotarlo possiamo "aprire" la qualità al massimo.
 
-# Rappresentazione in spazio di stato
+## Rappresentazione in spazio di stato
 
 Per poter usare l'algebra lineare (le matrici), raggruppiamo le variabili che cambiano nel tempo in un unico vettore colonna:
 
@@ -52,7 +55,7 @@ $$
 - La **prima equazione** ci dice che la velocità con cui cambia la variabile $t_f$ dipende dal suo valore attuale (moltiplicato per un guadagno $k_P$) e dal valore di una seconda variabile $t_{f_I}$ (moltiplicata per $k_I$).
 - La **seconda equazione** descrive l'errore. La variazione della componente integrale ($\dot{t}_{f_I}$) è data dalla differenza tra il valore desiderato (il set point $t_f^s$) e il valore attuale ($t_f$). In pratica, il sistema sta "accumulando" l'errore nel tempo.
 
-## Matrici dello spazio di stato
+### Matrici dello spazio di stato
 
 $$
 A = \begin{bmatrix} -k_P & -k_I \\ -1 & 0 \end{bmatrix}
@@ -70,6 +73,6 @@ $$
 D = 0
 $$
 
-## Pole allocation
+### Pole allocation
 
 In questo caso possiamo effettuare la **pole allocation** (o allocazione degli autovalori). Possiamo scegliere matematicamente i valori di $k_P$ e $k_I$ per imporre al sistema esattamente il comportamento dinamico che desideriamo.

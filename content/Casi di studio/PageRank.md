@@ -1,8 +1,11 @@
+_Tag:_ #automatica #cns
+
+---
 Per capire il PageRank, dobbiamo immaginare internet come un enorme grafo (una rete):
 - **Nodi (pallini):** Rappresentano le pagine Web ($P_1, P_2, \dots$).
 - **Archi (frecce):** Rappresentano i Link ipertestuali da una pagina all'altra.
 
-# La logica del "Voto"
+## La logica del "Voto"
 
 L'idea rivoluzionaria è che **un link verso una pagina conta come un voto di fiducia**. Tuttavia, non tutti i voti hanno lo stesso peso. ==L'importanza di una pagina P è la somma dell'importanza delle pagine che la linkano, divisa per il numero di link che queste pagine fanno verso l'esterno.== 
 
@@ -23,7 +26,7 @@ $$
 - **$r(Q)$**: È l'importanza della pagina $Q$ che ci sta linkando (più è alta, meglio è per noi).
 - **$|Q|$**: È il numero totale di link in uscita da $Q$. Più link fa $Q$, meno valore passa a noi.
 
-## Il Calcolo Iterativo (Dinamica nel tempo)
+### Il Calcolo Iterativo (Dinamica nel tempo)
 
 C'è un problema: per calcolare il nostro Rank serve il quello dell'altra pagina, ma per calcolare il suo serve il nostro. Come si risolve? Con un processo iterativo nel tempo.
 
@@ -40,7 +43,7 @@ $$
 
 (Il vettore dei rank di oggi è uguale alla Matrice $A$ moltiplicata per il vettore dei rank di ieri).
 
-# Esempio Pratico
+## Esempio Pratico
 
 Immaginiamo un piccolo web con sole **4 pagine**.
 
