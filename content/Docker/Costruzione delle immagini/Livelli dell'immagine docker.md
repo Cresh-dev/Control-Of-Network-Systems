@@ -1,5 +1,9 @@
-_Tag:_ #docker #images 
-
+---
+title: Livelli dell'immagine docker
+description: Il primo livello aggiunge comandi di base e un gestore di pacchetti, come apt.
+tags:
+  - docker
+  - images
 ---
 - Il primo livello aggiunge comandi di base e un gestore di pacchetti, come apt.
 - Il secondo livello installa un runtime Python e pip per la gestione delle dipendenze.
@@ -7,7 +11,7 @@ _Tag:_ #docker #images
 - Il quarto livello installa le dipendenze specifiche di quell'applicazione.
 - Il quinto livello copia il codice sorgente effettivo dell'applicazione.
 
-![[Pasted image 20250322140011.png]]
+![[livelli-dell-immagine-docker.png|Livelli dell'immagine docker]]
 
 ## Sovrapposizione degli strati
 

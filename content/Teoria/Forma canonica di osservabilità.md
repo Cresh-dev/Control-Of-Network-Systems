@@ -1,5 +1,9 @@
-_Tag:_ #automatica #cns
-
+---
+title: Forma canonica di osservabilità
+description: Questa forma è particolarmente utile perché permette di verificare l'osservabilità del sistema e facilita la progettazione di osservatori dello stato (come il…
+tags:
+  - automatica
+  - cns
 ---
 Questa forma è particolarmente utile perché permette di verificare [[Matrice di osservabilità|l'osservabilità del sistema]] e facilita la progettazione di **osservatori dello stato** (come il filtro di Kalman o l'osservatore di Luenberger).
 

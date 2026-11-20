@@ -1,7 +1,10 @@
-_Tag:_ #docker #volumi 
-
 ---
-
+title: Comandi e gestione pratica dei volumi
+description: "Creazione di un volume:"
+tags:
+  - docker
+  - volumi
+---
 **Creazione di un volume**: 
 
 ```bash

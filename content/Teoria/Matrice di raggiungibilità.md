@@ -1,5 +1,9 @@
-_Tag:_ #automatica #cns
-
+---
+title: Matrice di raggiungibilità
+description: La matrice di raggiungibilità è uno strumento fondamentale nell'automatica per determinare se è possibile guidare un sistema dinamico da uno stato iniziale a…
+tags:
+  - automatica
+  - cns
 ---
 ==La matrice di raggiungibilità è uno strumento fondamentale nell'automatica per determinare se è possibile guidare un sistema dinamico da uno stato iniziale a un qualsiasi stato finale desiderato in un tempo finito, agendo esclusivamente sugli ingressi==. Dove $x$ è il vettore di stato di dimensione $n$, la raggiungibilità dipende esclusivamente dalle matrici $A$ (matrice dinamica) e $B$ (matrice degli ingressi). Per un sistema con $n$ stati, la matrice di raggiungibilità è definita come la composizione a blocchi delle potenze della matrice $A$ moltiplicate per $B$:
 

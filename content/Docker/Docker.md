@@ -1,5 +1,8 @@
-_Tag:_ #docker
-
+---
+title: Docker
+description: Docker è uno strumento molto moderno e potente che ci premette di sviluppare app in dei container, quindi in un ambiente isolato dove possiamo effettuare le…
+tags:
+  - docker
 ---
 Docker è uno strumento molto moderno e potente che ci premette di sviluppare app in dei container, quindi in un ambiente isolato dove possiamo effettuare le nostre sperimentazioni e i nostri sviluppi senza correre il rischio di andare a interferire con programmi o librerie che sono installate sul nostro sistema o ancor peggio andare a effettuare delle azioni irreversibili che possono distruggere il nostro sistema.
 
@@ -11,7 +14,7 @@ Docker è uno strumento molto moderno e potente che ci premette di sviluppare ap
 
 ## Architettura di docker 
 
-![[Pasted image 20250324162421.png]]
+![[docker-architettura-di-docker.png|Docker — Architettura di docker]]
 
 ## Concetti di base
 
@@ -30,16 +33,16 @@ Prima di iniziare con Docker, è utile comprendere alcuni concetti fondamentali:
 
 ## Costruzione delle immagini
 
-![[Screenshot 2025-06-17 at 09.49.22.png]]
+![[docker-costruzione-delle-immagini.png|Docker — Costruzione delle immagini]]
 
 - [[Livelli dell'immagine docker]]
 - [[Costruire e pubblicare un immagine docker]]
 - [[Utilizzo della cache di build]]
 - [[Costruzioni multi-fase]]
 
-##  Comandi per container
+## Comandi per container
 
-![[Screenshot 2025-06-16 at 16.31.57.png]]
+![[docker-comandi-per-container.png|Docker — Comandi per container]]
   
 ## Docker compose
 

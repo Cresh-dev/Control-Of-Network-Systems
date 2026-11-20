@@ -1,5 +1,9 @@
-_Tag:_ #docker #rete
-
+---
+title: Comunicazione tra container
+description: Quando più container si trovano nella stessa rete bridge custom, possono comunicare tra loro usando i nomi dei container come hostname (DNS interno).
+tags:
+  - docker
+  - rete
 ---
 Quando più container si trovano nella **stessa rete bridge custom**, possono comunicare tra loro **usando i nomi dei container** come hostname (DNS interno).
 

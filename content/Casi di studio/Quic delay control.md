@@ -1,5 +1,9 @@
-_Tag:_ #automatica #cns
-
+---
+title: Quic delay control
+description: QUIC è un protocollo che si basa su UDP (User Datagram Protocol) a livello di implementazione a differenza del TCP (implementato nel kernel), il controllo di…
+tags:
+  - automatica
+  - cns
 ---
 QUIC è un protocollo che si basa su **UDP** (User Datagram Protocol) a livello di implementazione a differenza del TCP (implementato nel kernel), il controllo di congestione in QUIC/UDP avviene a **livello applicativo**. ==Il TCP classico aspetta di perdere un pacchetto per rallentare. Quic effettua un controllo migliore, perché monitora il ritardo, se esso aumenta significa che la coda si sta riempiendo e quindi bisogna rallentare prima di perdere dei pacchetti (buffer overflow).==
 
@@ -15,7 +19,7 @@ $$
 OWDV = OWD_{(i+1)} - OWD_{(i)}
 $$
 
-![[Screenshot 2026-01-14 at 11.13.38.png]]
+![[quic-delay-control.png|Quic delay control]]
 
 Espandendo la formula con i timestamp di invio ($S$) e ricezione ($R$):
 

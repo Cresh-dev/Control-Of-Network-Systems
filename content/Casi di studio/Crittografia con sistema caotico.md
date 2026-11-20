@@ -1,5 +1,9 @@
-_Tag:_ #automatica #cns
-
+---
+title: Crittografia con sistema caotico
+description: "Iniziamo con il definire cosa sono i sistemi caotici (come l'Attrattore di Lorenz):"
+tags:
+  - automatica
+  - cns
 ---
 Iniziamo con il definire cosa sono i sistemi caotici (come l'Attrattore di Lorenz):
 
@@ -7,7 +11,7 @@ Iniziamo con il definire cosa sono i sistemi caotici (come l'Attrattore di Loren
 - **Deterministici:** Seguono equazioni precise (non sono casuali).
 - **Sensibili alle condizioni iniziali:** Una variazione infinitesimale all'inizio porta a risultati completamente diversi dopo poco tempo (il famoso "effetto farfalla").
 
-![[Pasted image 20260113151327.png]]
+![[crittografia-con-sistema-caotico.png|Crittografia con sistema caotico]]
 
 > [!NOTE] Perché usarli in crittografia?
 > Poiché è impossibile conoscere le condizioni iniziali esatte del trasmettitore, il segnale generato appare come "rumore" imprevedibile a chiunque lo intercetti. Tuttavia, se conosciamo il sistema, non è vero rumore, ma caos strutturato.

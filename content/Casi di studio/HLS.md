@@ -1,5 +1,9 @@
-_Tag:_ #automatica #cns
-
+---
+title: HLS
+description: HLS ((HTTP Live Streaming)) è un protocollo di streaming sviluppato da Apple Inc.
+tags:
+  - automatica
+  - cns
 ---
 HLS ((HTTP Live Streaming)) è un protocollo di streaming sviluppato da Apple Inc. per la distribuzione di contenuti multimediali in diretta e on-demand su Internet. Fornisce segmenti tramite server web HTTP standard. Utilizza due tipi di manifest (.m3u8), la Master Playlist e le Media Playlist.
 

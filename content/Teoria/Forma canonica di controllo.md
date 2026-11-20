@@ -1,5 +1,9 @@
-_Tag:_ #automatica #cns
-
+---
+title: Forma canonica di controllo
+description: Usiamo questa rappresentazione quando vogliamo imporre al sistema un comportamento desiderato tramite il ritorno di stato (u -Kx).
+tags:
+  - automatica
+  - cns
 ---
 Usiamo questa rappresentazione quando vogliamo imporre al sistema un comportamento desiderato tramite il **ritorno di stato** ($u = -Kx$).
 

@@ -1,5 +1,9 @@
-_Tag:_ #docker #dockerfile 
-
+---
+title: Scrivere un dockerfile
+description: Un dockerfile è un documento testuale che è usato per creare un container.
+tags:
+  - docker
+  - dockerfile
 ---
 Un dockerfile è un documento testuale che è usato per creare un [[Container|container]]. Fornisce istruzioni per costruire l'immagine con comandi di avvio, files da copiare e altro ... Un esempio di un docker file può essere il seguente:
 

@@ -1,7 +1,11 @@
-_Tag:_ #automatica #cns
-
 ---
-Per introdurre questo concetto dobbiamo partire da una situazione in cui due utenti vogliono stabilire una videoconferenza o scambiare dati (es. gaming, chat), ma spesso sorge il dubbio su quale software usare, se è compatibile con il sistema operativo o se funziona su tutti i dispositivi. ==WebRTC  è una tecnologia con l'idea di utilizzare il browser come piattaforma unificante, trasformando la voce e il video in un'altra applicazione JavaScript, senza bisogno di plugin esterni==.
+title: WebRTC
+description: Per introdurre questo concetto dobbiamo partire da una situazione in cui due utenti vogliono stabilire una videoconferenza o scambiare dati (es.
+tags:
+  - automatica
+  - cns
+---
+Per introdurre questo concetto dobbiamo partire da una situazione in cui due utenti vogliono stabilire una videoconferenza o scambiare dati (es. gaming, chat), ma spesso sorge il dubbio su quale software usare, se è compatibile con il sistema operativo o se funziona su tutti i dispositivi. ==WebRTC è una tecnologia con l'idea di utilizzare il browser come piattaforma unificante, trasformando la voce e il video in un'altra applicazione JavaScript, senza bisogno di plugin esterni==.
 
 ## Standardizzazione e Architettura
 
@@ -12,7 +16,7 @@ WebRTC è frutto della collaborazione tra due enti di standardizzazione:
 
 L'architettura descritta di seguito è il "Triangolo WebRTC":
 
-![[Screenshot 2026-01-11 at 17.48.38.png]]
+![[webrtc-standardizzazione-e-architettura.png|WebRTC — Standardizzazione e Architettura]]
 
 1. Due browser (Caller e Callee) che comunicano direttamente (P2P) per i media.
 2. Un **Web Service** (Signaling Server) che serve solo per far "incontrare" i due utenti e scambiare le informazioni iniziali necessarie a stabilire la connessione.
@@ -35,7 +39,7 @@ Scendiamo nel dettaglio tecnico di come avviene la connessione:
 
 ## Peerconnection workflow
 
-![[Screenshot 2026-01-12 at 15.11.29.png]]
+![[webrtc-peerconnection-workflow.png|WebRTC — Peerconnection workflow]]
 
 1. Entrambi i lati devono creare l'oggetto `RTCPeerConnection`. È come se entrambi alzassero la cornetta del telefono preparandosi a comporre o ricevere.
 2. Il Chiamante ottiene l'accesso alla propria webcam e microfono (tramite il comando `getUserMedia`) e aggiunge questo flusso audio/video alla connessione. Sta dicendo: "Questi sono i dati che voglio inviare".

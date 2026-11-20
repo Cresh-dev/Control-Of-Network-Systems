@@ -1,5 +1,9 @@
-_Tag:_ #docker #rete
-
+---
+title: Sicurezza e troubleshooting
+description: I container sono isolati tra reti diverse.
+tags:
+  - docker
+  - rete
 ---
 I container sono isolati tra reti diverse. Se sono su reti diverse, non comunicano a meno che non siano connessi a una rete comune.
 

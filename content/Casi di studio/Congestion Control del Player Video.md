@@ -1,9 +1,13 @@
-_Tag:_ #automatica #cns
-
+---
+title: Congestion Control del Player Video
+description: Il nostro obiettivo tramite questo controllo è modellare il buffer dei chunk video, quindi noi siamo interessati effettivamente ai secondi di video…
+tags:
+  - automatica
+  - cns
 ---
 ==Il nostro obiettivo tramite questo controllo è modellare il buffer dei chunk video, quindi noi siamo interessati effettivamente ai secondi di video immagazzinati nel buffer.== 
 
-![[Screenshot 2026-01-17 at 09.10.13.png]]
+![[congestion-control-del-player-video.png|Congestion Control del Player Video]]
 
 Possiamo esprimere di seguito la variazione del buffer tramite la derivata $\dot{t_f(t)}$ che cresce se la rete ($r$) è più veloce del consumo video ($l$):
 
@@ -43,7 +47,7 @@ x = \begin{bmatrix} t_f \\ t_{f_I} \end{bmatrix} \quad \rightarrow \text{variabi
 $$
 
 > [!NOTE] Ingresso del sistema
-> Nel nostro caso l'ingresso è il set point del buffer $t_f^s$ quindi : 
+> Nel nostro caso l'ingresso è il set point del buffer $t_f^s$ quindi: 
 > $$u = t_f^s$$
 
 Il sistema in spazio di stato ha la seguente forma:

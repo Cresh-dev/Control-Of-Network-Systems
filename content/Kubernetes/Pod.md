@@ -1,23 +1,27 @@
-_Tag:_ #kubernetes #pod
-
+---
+title: Pod
+description: Il Pod è l'unità atomica (la più piccola) che si può creare e gestire in Kubernetes.
+tags:
+  - kubernetes
+  - pod
 ---
 Il Pod è l'**unità atomica** (la più piccola) che si può creare e gestire in Kubernetes.
 
 - **Non gestisci container:** In K8s non distribuiamo direttamente dei container (come faresti con Docker puro), ma distribuiamo Pod che _contengono_ container.
 - **Contenuto:** Un Pod può contenere uno o più container (ad esempio, un container principale per l'app e uno "sidecar" di supporto).
-- **Astrazione:** Pensiamo al Pod come a una "macchina logica" (un host virtuale) con il proprio indirizzo IP, hostname e processi .
+- **Astrazione:** Pensiamo al Pod come a una "macchina logica" (un host virtuale) con il proprio indirizzo IP, hostname e processi.
 
 
 > [!NOTE] Perché non usare semplicemente i container singoli?
-> - **Raggruppamento logico:** Le applicazioni complesse sono spesso composte da più processi che devono comunicare strettamente (es. via _localhost_ o condividendo file locali) .
-> - **Condivisione risorse:** Tutti i container dentro lo stesso Pod condividono lo stesso **Network Namespace** (stesso IP e stesse porte) e possono comunicare tramite IPC (Inter-Process Communication) .
-> - **Isolamento:** Se usassimo solo container sparsi, dovremmo mappare manualmente le porte per evitare conflitti. Il Pod risolve questo problema assegnando a ciascun gruppo un IP dedicato .
+> - **Raggruppamento logico:** Le applicazioni complesse sono spesso composte da più processi che devono comunicare strettamente (es. via _localhost_ o condividendo file locali).
+> - **Condivisione risorse:** Tutti i container dentro lo stesso Pod condividono lo stesso **Network Namespace** (stesso IP e stesse porte) e possono comunicare tramite IPC (Inter-Process Communication).
+> - **Isolamento:** Se usassimo solo container sparsi, dovremmo mappare manualmente le porte per evitare conflitti. Il Pod risolve questo problema assegnando a ciascun gruppo un IP dedicato.
 
 ==Kubernetes utilizza un modello di "Flat Network" (rete piatta senza NAT tra i pod), dove ogni Pod ha il suo IP unico. Tutti i Pod possono comunicare con tutti gli altri Pod direttamente, senza bisogno di traduzione degli indirizzi (NAT).==
 
 ## Creazione e Gestione
 
-==I Pod vengono definiti tramite file **YAML** (o JSON) chiamati "manifest"==, che contengono tre sezioni principali :
+==I Pod vengono definiti tramite file **YAML** (o JSON) chiamati "manifest"==, che contengono tre sezioni principali:
 
 1. **Metadata:** Nome del pod, etichette (labels), namespace.
 2. **Spec:** La descrizione desiderata (quali container usare, quali immagini Docker, quali porte).  
@@ -35,11 +39,11 @@ Man mano che i Pod aumentano, serve un modo per organizzarli.
 
 - **Labels (Etichette):** ==Sono coppie chiave-valore (es. env: prod, creation_method: manual) attaccate ai Pod per categorizzarli.==
 - **Node Selector:** ==Possiamo dire a Kubernetes di eseguire un Pod solo su specifici nodi che hanno una certa etichetta.==
-    - _Esempio:_ Se abbiamo un nodo con GPU, gli diamo l'etichetta `gpu=true`. Poi, nella definizione del Pod, usiamo `nodeSelector: gpu: "true"` per forzare l'esecuzione su quel nodo .
+    - _Esempio:_ Se abbiamo un nodo con GPU, gli diamo l'etichetta `gpu=true`. Poi, nella definizione del Pod, usiamo `nodeSelector: gpu: "true"` per forzare l'esecuzione su quel nodo.
 
 ## Namespace
 
-I Namespace servono a separare logicamente le risorse all'interno dello stesso cluster fisico (es. separare l'ambiente di "sviluppo" da quello di "produzione" o separare team diversi) .
+I Namespace servono a separare logicamente le risorse all'interno dello stesso cluster fisico (es. separare l'ambiente di "sviluppo" da quello di "produzione" o separare team diversi).
 
 ## Ciclo di vita (Cancellazione)
 

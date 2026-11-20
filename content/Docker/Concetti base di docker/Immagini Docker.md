@@ -1,5 +1,9 @@
-_Tag:_ #docker #images
-
+---
+title: Immagini Docker
+description: Le immagini in docker sono uno strumento fondamentale che hanno un forte legame con i Container, esse contengono tutti i file (di configurazione, binari…
+tags:
+  - docker
+  - images
 ---
 Le immagini in docker sono uno strumento fondamentale che hanno un forte legame con i [[Container]], esse contengono tutti i file (di configurazione, binari, librerie ...) necessari ad avviare un container. Possiamo vedere il tutto da un punto di vista più pragmatico immaginandoci che le immagini sono delle classi e i container sono delle istanze di queste classi.
 

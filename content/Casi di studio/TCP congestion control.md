@@ -1,5 +1,9 @@
-_Tag:_ #automatica #cns
-
+---
+title: TCP congestion control
+description: "Nel TCP tradizionale (Reno/NewReno), quando si verifica una perdita di pacchetto (3 ACK duplicati o timeout):"
+tags:
+  - automatica
+  - cns
 ---
 Nel TCP tradizionale (Reno/NewReno), quando si verifica una perdita di pacchetto (3 ACK duplicati o timeout):
 

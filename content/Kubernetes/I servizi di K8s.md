@@ -1,5 +1,9 @@
-_Tag:_ #kubernetes #k8s_services
-
+---
+title: I servizi di K8s
+description: In un'architettura a microservizi, le applicazioni (client) devono conoscere l'indirizzo IP del server per comunicare.
+tags:
+  - kubernetes
+  - k8s_services
 ---
 In un'architettura a microservizi, le applicazioni (client) devono conoscere l'indirizzo IP del server per comunicare. Tuttavia, in Kubernetes questo è difficile perché i [[Pod]] sono effimeri e quindi possono essere rimossi, scalati o fallire. Quando un pod viene ricreato, ottiene un **nuovo indirizzo IP**. Se abbiamo più copie dello stesso pod, dovrebbero condividere lo stesso punto di accesso, non avere IP sparsi. ==Un Service di Kubernetes è un'astrazione che definisce un singolo punto di ingresso stabile (un IP e una porta fissi) per un gruppo di pod==. Un service ha le seguenti caratteristiche:
 

@@ -1,5 +1,9 @@
-_Tag:_ #automatica #cns
-
+---
+title: Compensatore dinamico basato sull'osservatore
+description: In ambito di teoria del controllo, il Compensatore Dinamico basato sull'osservatore è la soluzione standard quando vogliamo controllare un sistema ma non…
+tags:
+  - automatica
+  - cns
 ---
 ==In ambito di teoria del controllo, il Compensatore Dinamico basato sull'osservatore è la soluzione standard quando vogliamo controllare un sistema ma non possiamo misurarne tutti gli stati interni (cosa che accade quasi sempre nella realtà)==. Possiamo unire le nozioni viste in precedenza del [[State feedback|controllore]] e dell'[[Osservazione dello stato|osservatore]] per realizzare il compensatore dinamico che stima lo stato del sistema, e usiamo quella stima per decidere l'azione di controllo. Per descrivere il sistema in forma di stato del **compensatore dinamico**, dobbiamo unire le equazioni dell'osservatore e la legge di controllo. Il compensatore è esso stesso un sistema dinamico che ha come **ingressi** le misure del sistema reale ($y$) e come **uscita** l'azione di controllo ($u$).
 ## Le equazioni di partenza

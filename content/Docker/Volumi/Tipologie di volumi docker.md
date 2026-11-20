@@ -1,5 +1,9 @@
-_Tag:_ #docker #volumi
-
+---
+title: Tipologie di volumi docker
+description: "Volumi nominati: creati con docker volume create nomevolume, riutilizzabili da più container; - Volumi anonimi: creati automaticamente se si monta un percorso…"
+tags:
+  - docker
+  - volumi
 ---
 - **Volumi nominati**: creati con `docker volume create nome_volume`, riutilizzabili da più container;
 - **Volumi anonimi**: creati automaticamente se si monta un percorso interno senza nome, sono difficili da gestire manualmente;

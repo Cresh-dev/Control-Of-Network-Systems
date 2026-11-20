@@ -1,5 +1,9 @@
-_Tag:_ #automatica #cns
-
+---
+title: Forma diagonale
+description: Usiamo questa forma quando vogliamo "disaccoppiare" il sistema, ogni variabile di stato diventa indipendente dalle altre.
+tags:
+  - automatica
+  - cns
 ---
 Usiamo questa forma quando vogliamo "disaccoppiare" il sistema, ogni variabile di stato diventa indipendente dalle altre. Con questa rappresentazione rendiamo la matrice $A$ diagonal, ovvero con i valori solo sulla diagonal principale. Questi valori sono gli **autovalori** ($\lambda_1, \lambda_2, ...$) di $A$ cioè i poli del nostro sistema.
 

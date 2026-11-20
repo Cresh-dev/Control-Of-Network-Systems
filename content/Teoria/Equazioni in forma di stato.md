@@ -1,5 +1,9 @@
-_Tag:_ #automatica #cns
-
+---
+title: Equazioni in forma di stato
+description: Le equazioni in forma di stato sono uno strumento fondamentale per descrivere il comportamento di sistemi dinamici (meccanici, elettrici, economici, ecc.) nel…
+tags:
+  - automatica
+  - cns
 ---
 Le **equazioni in forma di stato** sono uno strumento fondamentale per descrivere il comportamento di sistemi dinamici (meccanici, elettrici, economici, ecc.) nel tempo. Invece di usare una singola equazione complicata, questo metodo scompone il sistema in un set di equazioni differenziali del primo ordine. ==L'idea è quella di conoscere lo "stato" interno del sistema in ogni istante==. I componenti principali sono due equazioni matriciali:
 

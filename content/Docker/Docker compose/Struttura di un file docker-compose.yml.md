@@ -1,5 +1,9 @@
-_Tag:_ #docker #docker-compose
-
+---
+title: Struttura di un file docker-compose.yml
+description: "Immaginiamo di voler sviluppare un’applicazione composta da:"
+tags:
+  - docker
+  - docker-compose
 ---
 Immaginiamo di voler sviluppare un’applicazione composta da:
 

@@ -1,5 +1,8 @@
-_Tag:_ #container 
-
+---
+title: Namespaces nei container
+description: I namespaces di Linux sono una tecnologia fondamentale per l'isolamento dei container (come Docker o Kubernetes).
+tags:
+  - container
 ---
 I namespaces di Linux sono una tecnologia fondamentale per l'isolamento dei container (come Docker o Kubernetes). Sono utilizzati per creare ambienti isolati che non interferiscono tra loro. I principali tipi di namespaces nei container sono:
 
