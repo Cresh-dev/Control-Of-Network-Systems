@@ -1,0 +1,4 @@
+# Vecchi URL di Quartz 4 che Quartz 5 non reindirizza da solo (note con lo stesso nome della cartella).
+# Formato: <vecchio percorso senza .html> <nuovo URL>. Usato dal workflow di deploy.
+Docker/Docker /Control-Of-Network-Systems/docker/
+Kubernetes/Kubernetes /Control-Of-Network-Systems/kubernetes/
